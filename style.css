@@ -1,0 +1,23 @@
+.imagesSection {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.imagesSection img {
+    width: 100%;
+    border-radius: 7px;
+}
+
+
+@media screen and (max-width: 576px) {
+    .imagesSection {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (min-width: 576.99px) and (max-width: 992px) {
+    .imagesSection {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
